@@ -6,12 +6,14 @@ package com.sakha.services;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.jms.annotation.EnableJms;
 
 @SpringBootApplication
-public class Application {
+@EnableJms
+public class UniversityExtractionApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(UniversityExtractionApplication.class, args);
     }
 
 }
